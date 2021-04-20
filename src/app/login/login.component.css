@@ -25,10 +25,22 @@ h1 {
   padding-top: 140px;
 }
 
+h2 {
+  font-family: 'Gothic A1', sans-serif;
+  font-size: 30px;
+  text-align: left;
+  color: rgb(92, 90, 90);
+}
+
 .contents-box {
   width: 1050px;
   height: 500px;
   margin-top: 50px;
   display: inline-block;
-  background-color: lightcoral;
+  /* background-color: lightcoral; */
+}
+
+#line {
+  width: 100%;
+  border: solid 1px rgb(172, 170, 170);
 }

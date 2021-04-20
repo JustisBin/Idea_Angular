@@ -6,6 +6,7 @@ import { AnnoBoardComponent } from './anno-board/anno-board.component';
 import { CsBoardComponent } from './cs-board/cs-board.component';
 import { NoticeBoardComponent } from './notice-board/notice-board.component';
 import { LoginComponent } from './login/login.component';
+import { ContactBoardComponent } from './contact-board/contact-board.component';
 
 const routes: Routes = [
   { path: "", component: MainBodyComponent },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'notice-board', component: NoticeBoardComponent },
   { path: 'cs-board', component: CsBoardComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'contact-board', component: ContactBoardComponent }
 ];
 
 @NgModule({
