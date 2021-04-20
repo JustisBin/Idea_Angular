@@ -30,19 +30,3 @@ h1 {
   height: 900px;
   display: inline-block;
 }
-
-.rank-box {
-  width: 350px;
-  height: 800px;
-  background-color: lavender;
-  display: inline-block;
-  margin-top: 50px;
-}
-
-.list-box {
-  width: 700px;
-  height: 800px;
-  background-color: lightcoral;
-  display: inline-block;
-  margin-top: 50px;
-}
