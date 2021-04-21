@@ -1,13 +1,13 @@
-.container {
+.main-body {
   width: 100%;
-  height: 900px;
+  height: 850px;
   text-align: center;
   background-image: url('http://bicdataidea.com/img/img_intro_bg.png');
   background-size: contain;
 }
 
 .main-img {
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .subcon {
@@ -37,47 +37,4 @@
   background-position-x: right;
   background-position-y: bottom;
   background-size: 250px, 250px;
-}
-
-@media (max-width: 1000px) {
-  .container {
-    height: 1000px;
-  }
-
-  .main-img {
-    max-width: 75%;
-    max-height: 75%;
-  }
-
-  .subcon {
-    margin-top: 75px;
-    height: 630px;
-  }
-
-  .subcon1 {
-    background-color: rgb(86, 201, 193);
-    width: 100%;
-    height: 50%;
-    background-size: 200px, 200px;
-  }
-
-  .subcon2 {
-    background: rgb(86, 40, 170);
-    width: 100%;
-    height: 50%;
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: bottom;
-    background-size: 200px, 200px;
-  }
-}
-
-@media (max-width: 600px) {
-  .container {
-    height: 900px;
-  }
-
-  .subcon {
-    margin-top: 30px;
-  }
 }

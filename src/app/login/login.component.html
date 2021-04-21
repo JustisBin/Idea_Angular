@@ -1,40 +1,45 @@
-<div class="container">
+<div class="main-box">
   <div class="title-box">
     <h1>로그인</h1>
   </div>
   <div class="contents-box">
-    <h2>로그인</h2>
-    <hr id="line">
-    <form method="post" id="authForm" action="https://www.tistory.com/auth/login">
-      <input type="hidden" name="redirectUrl" value="https://blogpack.tistory.com/manage">
-
-      <div class="box_login">
-        <div class="inp_text">
-          <label for="loginId" class="screen_out">아이디</label>
-          <input type="email" id="loginId" name="loginId" placeholder="ID">
-        </div>
-        <div class="inp_text">
-          <label for="loginPw" class="screen_out">비밀번호</label>
-          <input type="password" id="loginPw" name="password" placeholder="Password">
-        </div>
-      </div>
-      <button type="submit" class="btn_login" disabled>로그인</button>
-      <div class="login_append">
-        <div class="inp_chk">
-          <!-- 체크시 checked 추가 -->
-          <input type="checkbox" id="keepLogin" class="inp_radio" name="keepLogin">
-          <label for="keepLogin" class="lab_g">
-            <span class="img_top ico_check"></span>
-            <span class="txt_lab">로그인 상태 유지</span>
-          </label>
-        </div>
-        <span class="txt_find">
-          <a href="/member/find/loginId" class="link_find">아이디</a>
-          /
-          <a href="/member/find/password" class="link_find">비밀번호 찾기</a>
-        </span>
-      </div>
-
+    <form action="#">
+      <p>
+        <label>
+          <input type="checkbox" />
+          <span>Red</span>
+        </label>
+      </p>
+      <p>
+        <label>
+          <input type="checkbox" checked="checked" />
+          <span>Yellow</span>
+        </label>
+      </p>
+      <p>
+        <label>
+          <input type="checkbox" class="filled-in" checked="checked" />
+          <span>Filled in</span>
+        </label>
+      </p>
+      <p>
+        <label>
+          <input id="indeterminate-checkbox" type="checkbox" />
+          <span>Indeterminate Style</span>
+        </label>
+      </p>
+      <p>
+        <label>
+          <input type="checkbox" checked="checked" disabled="disabled" />
+          <span>Green</span>
+        </label>
+      </p>
+      <p>
+        <label>
+          <input type="checkbox" disabled="disabled" />
+          <span>Brown</span>
+        </label>
+      </p>
     </form>
   </div>
 </div>

@@ -28,10 +28,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/custom-theme.scss",
-              "src/styles.css"
+              "src/styles.css",
+              "/Users/jeong-uibin/Documents/Idea_Angular/src/assets/css/materialize.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "/Users/jeong-uibin/Documents/Idea_Angular/src/assets/js/materialize.js",
+              "/Users/jeong-uibin/Documents/Idea_Angular/src/assets/js/init.js"
+            ]
           },
           "configurations": {
             "production": {

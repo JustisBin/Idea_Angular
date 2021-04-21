@@ -1,36 +1,32 @@
-<div class="box">
-  <div class="logo">
-    <a routerLink="main-board"><img class="logo-img" src="http://bicdataidea.com/img/img_logo.png"></a>
-  </div>
-  <div class="nav">
-    <ul class="nav-list">
-      <a routerLink="/idea-board">
-        <li>아이디어 플랫폼</li>
-      </a>
-      <a routerLink="/anno-board">
-        <li>공고정보 게시판</li>
-      </a>
-      <a routerLink="/notice-board">
-        <li>게시판</li>
-      </a>
-      <a routerLink="/contact-board">
-        <li>고객센터</li>
-      </a>
-      <a routerLink="/login">
-        <li>로그인</li>
-      </a>
+<nav style="background-color:rgb(233, 233, 233);">
+  <div class="nav-wrapper container"><a id="logo-container" routerLink="/main-board" class="brand-logo"><img
+        class="logo-img" src="http://bicdataidea.com/img/img_logo.png"></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a routerLink="/idea-board">아이디어 플랫폼</a></li>
+      <li><a routerLink="/anno-board">공고정보 게시판</a></li>
+      <li><a routerLink="/notice-board">게시판</a></li>
+      <li><a routerLink="/contact-board">고객센터</a></li>
+      <li><a routerLink="/login">로그인</a></li>
     </ul>
   </div>
-</div>
+</nav>
 
 <router-outlet></router-outlet>
 
 
-<div class="footer" style="background-image: url('http://bicdataidea.com/img/img_logo.png');">
-  <br>
-  <p>(00000) 000 000 000 000 00-00 0000000 0000000</p>
-
-  <p>전화번호:000-000-0000</p>
-
-  <p>Copyright © 아이디어 플랫폼. All rights Reserved.</p>
-</div>
+<footer class="page-footer" style="background-color: rgb(209, 206, 206); ">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12" style="color: rgb(91, 104, 117);;">
+        <h5>Footer Content</h5>
+        <p>You can use rows and columns here to organize your
+          footer content.</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container" style="color:rgb(91, 104, 117); margin-left: 227px;">
+      © 2014 Copyright Text
+    </div>
+  </div>
+</footer>

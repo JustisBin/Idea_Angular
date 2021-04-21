@@ -26,9 +26,13 @@
     "@angular/platform-browser-dynamic": "~11.2.5",
     "@angular/platform-server": "~11.2.5",
     "@angular/router": "~11.2.5",
+    "@ng-bootstrap/ng-bootstrap": "^9.1.0",
     "@nguniversal/express-engine": "^11.2.1",
+    "bootstrap": "^4.6.0",
     "express": "^4.15.2",
+    "materialize-css": "^1.0.0-rc.2",
     "rxjs": "~6.6.0",
+    "summernote": "^0.8.18",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.3"
   },

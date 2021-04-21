@@ -44,3 +44,8 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Css Files
+Css
+js
+summernote-0.8.18-dist
