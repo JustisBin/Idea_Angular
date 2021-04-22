@@ -9,16 +9,16 @@
       <table class="highlight">
         <thead>
           <tr>
-            <th>번호</th>
+            <th id="id">번호</th>
             <th>제목</th>
-            <th>작성일</th>
+            <th id="date">작성일</th>
           </tr>
         </thead>
         <tbody>
           <tr *ngFor="let anno_list of anno_list">
-            <td>{{ anno_list.id }}</td>
+            <td id="id">{{ anno_list.id }}</td>
             <td>{{ anno_list.title }}</td>
-            <td>{{ anno_list.date }}</td>
+            <td id="date">{{ anno_list.date }}</td>
           </tr>
         </tbody>
       </table>

@@ -14,6 +14,4 @@ export class IdeaBoardComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  items = [];
-
 }

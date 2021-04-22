@@ -41,3 +41,20 @@ h5 {
   display: inline-block;
   margin-top: 50px;
 }
+
+#id {
+  text-align: center;
+  width: 100px;
+}
+
+#title {
+  text-align: center;
+}
+
+#date {
+  text-align: center;
+}
+
+th {
+  text-align: center;
+}
