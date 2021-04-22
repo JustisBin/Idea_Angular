@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { anno_list } from './anno_list'
 
 @Component({
   selector: 'app-anno-board',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./anno-board.component.css']
 })
 export class AnnoBoardComponent implements OnInit {
-
+  anno_list = anno_list;
   constructor() { }
 
   ngOnInit(): void {
