@@ -4,9 +4,8 @@
   text-align: center;
   background-size: contain;
   background-color: rgb(233, 233, 233);
+  margin-top: -41px;
 }
-
-
 
 .title-box {
   width: 100%;
@@ -31,16 +30,15 @@ h1 {
   width: 1050px;
   height: 700px;
   display: inline-block;
-  background-color: coral;
   margin-top: 50px;
 }
 
 .submenu-box {
   width: 1050px;
   height: 80px;
-  background-color: rgb(233, 233, 233);
+  background-color: rgb(184, 184, 184);
   display: inline-block;
-  margin-top: 75px;
+  margin-top: 50px;
 }
 
 table {
@@ -49,28 +47,22 @@ table {
   border: 0;
 }
 
-tr {
+#sub {
   font-size: 20px;
   font-family: 'Gothic A1', sans-serif;
 }
 
-th {
+#subth {
   width: 50%;
-  font-weight: 100;
+  font-weight: 400;
   will-change: transform;
   transition: transform 450ms;
+  text-align: center;
 }
 
-th:hover {
-  background-color: rgb(221, 220, 220);
+#subth:hover {
+  background-color: rgb(86, 40, 170);
+  color: rgb(184, 184, 184);
   transition: transform 125ms;
-  transform: translateY(-10px);
-}
-
-th:visited {
-  text-decoration: none;
-}
-
-th:active {
-  text-decoration: none;
+  transform: translateY(-5px);
 }

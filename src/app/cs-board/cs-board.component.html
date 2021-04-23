@@ -1,17 +1,47 @@
 <div class="main-box">
   <div class="title-box">
-    <h1>문의게시판</h1>
+    <h1>공지사항</h1>
     <div class="submenu-box">
       <table>
-        <tr>
-          <th routerLink="/notice-board">공지사항</th>
-          <th routerLink="/cs-board">문의게시판</th>
+        <tr id="sub">
+          <th id="subth" routerLink="/notice-board">공지사항</th>
+          <th id="subth" routerLink="/cs-board">문의게시판</th>
         </tr>
       </table>
     </div>
   </div>
 
   <div class="contents-box">
-
+    <div class="list-box">
+      <h5 style="float: left;">문의게시판</h5>
+      <hr style="width:100%; float: left;">
+      <table class="highlight">
+        <thead>
+          <tr>
+            <th>번호</th>
+            <th>제목</th>
+            <th>작성자</th>
+            <th>작성일</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let cs_list of cs_list">
+            <td>{{ cs_list.id }}</td>
+            <td>{{ cs_list.title }}</td>
+            <td>{{ cs_list.name }}</td>
+            <td>{{ cs_list.date }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <ul class="pagination">
+        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+        <li class="active #6a1b9a purple darken-3"><a href="#!">1</a></li>
+        <li class="waves-effect"><a href="#!">2</a></li>
+        <li class="waves-effect"><a href="#!">3</a></li>
+        <li class="waves-effect"><a href="#!">4</a></li>
+        <li class="waves-effect"><a href="#!">5</a></li>
+        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+      </ul>
+    </div>
   </div>
 </div>
