@@ -3,7 +3,7 @@
   height: 900px;
   text-align: center;
   background-size: contain;
-  background-color: rgb(233, 233, 233);
+  background-color: white;
   margin-top: -41px;
 }
 
@@ -44,14 +44,5 @@ h2 {
   display: inline-block;
   width: 600px;
   height: 300px;
-  margin-top: 55px;
-}
-
-#line {
-  width: 100%;
-  border: solid 1px rgb(172, 170, 170);
-}
-
-.waves-effect waves-light btn {
-  padding: 30px;
+  margin-top: 60px;
 }

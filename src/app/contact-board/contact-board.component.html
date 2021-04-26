@@ -3,6 +3,36 @@
     <h1>고객센터</h1>
   </div>
   <div class="contents-box">
-
+    <div class="list-box">
+      <h5>고객센터</h5>
+      <hr style="width:100%; float: left;">
+    </div>
+    <div class="row">
+      <form class="col s12" style="text-align: left;">
+        <div class="col s12">
+          이메일
+          <div class=" input-field inline" style="width:80%; margin-left: 115px;">
+            <input id="email" type="email" class="validate">
+            <label for="email">Email</label>
+          </div>
+          <hr style="width:100%; float: left;">
+        </div>
+        <div class="col s12">
+          제 목
+          <div class=" input-field inline" style="width:80%; margin-left: 123px;">
+            <textarea id="textarea1" class="materialize-textarea"></textarea>
+            <label for="textarea1">Title</label>
+          </div>
+          <hr style="width:100%; float: left;">
+        </div>
+        <div class="col s12">
+          <ckeditor style="min-height: 300px; max-height: 400px;" id="editor" [editor]="Editor"></ckeditor>
+        </div>
+        <div class="col s12" style="margin-top: 20px;">
+          <a routerLink="/main-board" class="waves-effect waves-light btn-large purple darken-4" style="float: right;"
+            (click)="submit()">문의하기</a>
+        </div>
+      </form>
+    </div>
   </div>
 </div>

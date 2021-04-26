@@ -1,15 +1,15 @@
 <div class="main-box">
   <div class="title-box">
-    <h1>아이디어 등록</h1>
+    <h1>문의글 등록</h1>
   </div>
   <div class="contents-box">
     <div class="row">
-      <h5 style="float: left;">아이디어 작성</h5>
+      <h5 style="float: left;">문의글 작성</h5>
       <hr style="width:100%; float: left;">
     </div>
     <div class="row">
       <form class="col s12" style="text-align: left;">
-        <div class="col s12">
+        <div class="col s12" style="margin-top:-20px">
           작성자명
           <div class="input-field inline" style="margin-left: 100px;">
             <input disabled value="정의빈" id="disabled" type="text" class="validate">
@@ -37,11 +37,10 @@
               <input class="file-path validate" type="text" placeholder="Upload one or more files">
             </div>
           </div>
-          <hr style="width:100%; float: left;">
         </div>
         <div class="col s12">
-          <a routerLink="/idea-board" class="waves-effect waves-light btn-large purple darken-4" style="float: right;"
-            (click)="submit()">아이디어
+          <a routerLink="/cs-board" class="waves-effect waves-light btn-large purple darken-4" style="float: right;"
+            (click)="submit()">문의글
             등록</a>
         </div>
       </form>

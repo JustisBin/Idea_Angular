@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
-@Component({
-  selector: 'app-insert-idea',
-  templateUrl: './insert-idea.component.html',
-  styleUrls: ['./insert-idea.component.css']
-})
-export class InsertIdeaComponent implements OnInit {
 
+@Component({
+  selector: 'app-insert-cs',
+  templateUrl: './insert-cs.component.html',
+  styleUrls: ['./insert-cs.component.css']
+})
+export class InsertCsComponent implements OnInit {
   public Editor = ClassicEditor;
   constructor() { }
 

@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CKEditorModule } from '@ckeditor/ckeditor5-angular'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,8 @@ import { NoticeBoardComponent } from './notice-board/notice-board.component';
 import { LoginComponent } from './login/login.component';
 import { ContactBoardComponent } from './contact-board/contact-board.component';
 import { InsertIdeaComponent } from './insert-idea/insert-idea.component';
+import { InsertCsComponent } from './insert-cs/insert-cs.component';
+import { AgreeServiceComponent } from './agree-service/agree-service.component';
 
 @NgModule({
   declarations: [
@@ -26,13 +29,16 @@ import { InsertIdeaComponent } from './insert-idea/insert-idea.component';
     LoginComponent,
     ContactBoardComponent,
     InsertIdeaComponent,
+    InsertCsComponent,
+    AgreeServiceComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
+    CKEditorModule,
     NgbModule,
     BrowserAnimationsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

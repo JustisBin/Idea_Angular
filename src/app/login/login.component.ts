@@ -10,6 +10,10 @@ export class LoginComponent implements OnInit {
   pw = new FormControl('');
   constructor() { }
 
+  submit() {
+    alert('로그인에 성공하였습니다!');
+  }
+
   ngOnInit(): void {
   }
 

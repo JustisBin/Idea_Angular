@@ -3,7 +3,7 @@
   height: 1100px;
   text-align: center;
   background-size: contain;
-  background-color: rgb(233, 233, 233);
+  background-color: white;
   margin-top: -41px;
 }
 
@@ -36,7 +36,7 @@ h1 {
 .submenu-box {
   width: 1050px;
   height: 80px;
-  background-color: rgb(184, 184, 184);
+  background-color: rgb(233, 233, 233);
   display: inline-block;
   margin-top: 50px;
 }
@@ -52,7 +52,17 @@ table {
   font-family: 'Gothic A1', sans-serif;
 }
 
-#subth {
+#subth1 {
+  width: 50%;
+  font-weight: 400;
+  will-change: transform;
+  transition: transform 450ms;
+  text-align: center;
+  background-color: rgb(86, 40, 170);
+  color: white;
+}
+
+#subth2 {
   width: 50%;
   font-weight: 400;
   will-change: transform;
@@ -60,9 +70,9 @@ table {
   text-align: center;
 }
 
-#subth:hover {
+#subth2:hover {
   background-color: rgb(86, 40, 170);
-  color: rgb(184, 184, 184);
+  color: white;
   transition: transform 125ms;
   transform: translateY(-5px);
 }

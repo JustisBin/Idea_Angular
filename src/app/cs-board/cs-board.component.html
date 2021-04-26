@@ -1,11 +1,11 @@
 <div class="main-box">
   <div class="title-box">
-    <h1>공지사항</h1>
+    <h1>문의게시판</h1>
     <div class="submenu-box">
       <table>
         <tr id="sub">
-          <th id="subth" routerLink="/notice-board">공지사항</th>
-          <th id="subth" routerLink="/cs-board">문의게시판</th>
+          <th id="subth1" routerLink="/notice-board">공지사항</th>
+          <th id="subth2" routerLink="/cs-board">문의게시판</th>
         </tr>
       </table>
     </div>
@@ -14,6 +14,8 @@
   <div class="contents-box">
     <div class="list-box">
       <h5 style="float: left;">문의게시판</h5>
+      <a routerLink="/insert-cs" class="waves-effect waves-light btn"
+        style="float: right; margin-top:10px; background-color: rgb(86, 40, 170);">문의글 등록하기</a>
       <hr style="width:100%; float: left;">
       <table class="highlight">
         <thead>

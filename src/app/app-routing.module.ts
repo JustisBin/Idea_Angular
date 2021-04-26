@@ -8,6 +8,8 @@ import { NoticeBoardComponent } from './notice-board/notice-board.component';
 import { LoginComponent } from './login/login.component';
 import { ContactBoardComponent } from './contact-board/contact-board.component';
 import { InsertIdeaComponent } from './insert-idea/insert-idea.component';
+import { InsertCsComponent } from './insert-cs/insert-cs.component';
+import { AgreeServiceComponent } from './agree-service/agree-service.component';
 
 const routes: Routes = [
   { path: "", component: MainBodyComponent },
@@ -18,7 +20,9 @@ const routes: Routes = [
   { path: 'cs-board', component: CsBoardComponent },
   { path: 'login', component: LoginComponent },
   { path: 'contact-board', component: ContactBoardComponent },
-  { path: 'insert-idea', component: InsertIdeaComponent }
+  { path: 'insert-idea', component: InsertIdeaComponent },
+  { path: 'insert-cs', component: InsertCsComponent },
+  { path: 'agree-service', component: AgreeServiceComponent },
 ];
 
 @NgModule({
