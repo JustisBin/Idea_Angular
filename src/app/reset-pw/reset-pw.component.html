@@ -1,37 +1,33 @@
 <div class="main-box">
   <div class="title-box">
-    <h1>로그인</h1>
+    <h1>비밀번호 재설정</h1>
   </div>
   <div class="contents-box">
-    <h5 style="float: left;">로그인</h5>
+    <h5 style="float: left;">비밀번호 재설정</h5>
     <hr style="width:100%; float: left;">
     <div class="login-box col s12 z-depth-2 card-panel">
       <form class="login-form">
         <div class="row margin">
-          <div class="input-field col s12">
-            <i class="material-icons prefix">email</i>
-            <input id="email" name="email" type="text" style="cursor: auto;" />
-            <label for="email">Email</label>
-          </div>
-        </div>
-
-        <div class="row margin">
+          <h6>비밀번호</h6>
           <div class="input-field col s12">
             <i class="material-icons prefix">vpn_key</i>
             <input id="password" name="password" type="password" />
             <label for="password">Password</label>
           </div>
         </div>
-
+        <div class="row margin">
+          <h6>비밀번호 재입력</h6>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">vpn_key</i>
+            <input id="password" name="password" type="password" />
+            <label for="password">Password</label>
+          </div>
+        </div>
         <div class="row">
           <div class="input-field col s12" style="margin-top:-10px;">
             <button routerLink="/main-board" (click)="submit()" type="submit"
               class="btn waves-effect waves-light purple darken-4"
-              style="margin-right: 30px; width: 120px; margin-left:20px;">로그인</button>
-            <button routerLink="/agree-service" type="submit" class="btn waves-effect waves-light teal accent-4"
-              style="margin-right: 30px; width: 120px;">회원가입</button>
-            <button routerLink="/find-pw" type="submit" class="btn waves-effect waves-light teal accent-4"
-              style="margin-right: 10px; width: 120px;">비밀번호찾기</button>
+              style="margin-right: 30px; width: 200px; margin-left:20px;">확인</button>
           </div>
         </div>
       </form>

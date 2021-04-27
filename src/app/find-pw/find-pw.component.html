@@ -1,0 +1,32 @@
+<div class="main-box">
+  <div class="title-box">
+    <h1>비밀번호 찾기</h1>
+  </div>
+  <div class="contents-box">
+    <h5 style="float: left;">비밀번호 찾기</h5>
+    <hr style="width:100%; float: left;">
+    <div class="login-box col s12 z-depth-2 card-panel">
+      <div class="row">
+        <br>
+        이메일을 입력해주세요.<br><br>
+      </div>
+      <form class="login-form">
+        <div class="row margin">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">email</i>
+            <input id="email" name="email" type="text" style="cursor: auto;" />
+            <label for="email">Email</label>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="input-field col s12" style="margin-top:-10px;">
+            <button routerLink="/main-board" (click)="submit()" type="submit"
+              class="btn waves-effect waves-light purple darken-4"
+              style="margin-right: 30px; width: 200px; margin-left:20px;">비밀번호 찾기</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

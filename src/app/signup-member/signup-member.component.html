@@ -1,0 +1,91 @@
+<div class="main-box">
+  <div class="title-box">
+    <h1>회원가입</h1>
+  </div>
+  <div class="contents-box">
+    <h5 style="float: left;">정보등록</h5>
+    <hr style="width:100%; float: left;">
+    <div class="row">
+      <form class="col s12">
+        <table>
+          <tr>
+            <td>이메일</td>
+            <td><input id="email" type="email" class="validate">
+              <label for="email">Email</label></td>
+          </tr>
+          <tr>
+            <td>이름</td>
+            <td><input id="name" type="text" class="validate">
+              <label for="name">User Name</label></td>
+          </tr>
+          <tr>
+            <td>비밀번호</td>
+            <td><input id="password" type="password" class="validate" data-length="20">
+              <label for="password">비밀번호는 영문,숫자 포함 6자리 이상 입력해주세요</label></td>
+          </tr>
+          <tr>
+            <td>비밀번호 확인</td>
+            <td><input id="password" type="password" class="validate" data-length="20">
+              <label for="password">비밀번호확인은 영문,숫자 포함 6자리 이상 입력해주세요</label></td>
+          </tr>
+          <tr>
+            <td>성별</td>
+            <td>
+              <select class="browser-default">
+                <option value="" disabled selected>성별을 선택해주세요</option>
+                <option value="1">남성</option>
+                <option value="2">여성</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>생년월일</td>
+            <td><input id="last_name" type="text" class="validate">
+              <label for="last_name">YYYY-MM-DD</label></td>
+          </tr>
+          <tr>
+            <td>전화번호</td>
+            <td>
+              <input id="telephone" type="tel" class="validate">
+              <label for="telephone">000-0000-0000</label></td>
+          </tr>
+          <tr>
+            <td>소속</td>
+            <td>
+              <input id="division" type="text" class="validate">
+              <label for="division">사업자가 아닌 경우 예비창업자 기재</label></td>
+          </tr>
+          <tr>
+            <td>시도</td>
+            <td>
+              <select class="browser-default">
+                <option value="" disabled selected>시도를 선택해주세요</option>
+                <option value="1">서울특별시</option>
+                <option value="2">부산광역시</option>
+                <option value="3">대구광역시</option>
+                <option value="4">인천광역시</option>
+                <option value="5">울산광역시</option>
+                <option value="6">대전광역시</option>
+                <option value="7">광주광역시</option>
+                <option value="8">세종특별시</option>
+                <option value="9">경기도</option>
+                <option value="10">강원도</option>
+                <option value="11">충청북도</option>
+                <option value="12">충청남도</option>
+                <option value="13">경상북도</option>
+                <option value="14">경상남도</option>
+                <option value="15">전라북도</option>
+                <option value="16">전라남도</option>
+                <option value="17">제주도</option>
+              </select></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <div class="row2">
+      <a routerLink="/main-board" class="waves-effect waves-light btn-large deep-purple darken-2" style="width: 200px;"
+        (click)="submit()">회원가입</a>
+    </div>
+  </div>
+
+</div>

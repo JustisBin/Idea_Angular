@@ -1,6 +1,6 @@
 .main-box {
   width: 100%;
-  height: 1550px;
+  height: 900px;
   text-align: center;
   background-size: contain;
   background-color: white;
@@ -26,34 +26,28 @@ h1 {
   padding-top: 140px;
 }
 
+h2 {
+  font-family: 'Gothic A1', sans-serif;
+  font-size: 30px;
+  text-align: left;
+  color: rgb(92, 90, 90);
+}
+
 .contents-box {
   width: 1050px;
-  height: 1200px;
+  height: 500px;
   display: inline-block;
   margin-top: 50px;
 }
 
-.row {
-  width: 600px;
-  height: 280px;
+.login-box {
   display: inline-block;
+  width: 500px;
+  height: 350px;
+  margin-top: 60px;
 }
 
-.row2 {
-  width: 600px;
-  height: 50px;
-  display: inline-block;
-  margin-top: -20px;
-  text-align: left;
-  margin-bottom: 15px;
-}
-
-textarea {
-  width: 600px;
-  height: 250px;
-  resize: none;
-}
-
-span {
-  color: black;
+h6 {
+  float: left;
+  margin-left: 30px;
 }
