@@ -9,3 +9,5 @@ ul a:link {
 ul a:visited {
   color: rgb(91, 104, 117);
 }
+
+@media(max-width: 992px) {}

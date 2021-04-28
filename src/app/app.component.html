@@ -11,8 +11,13 @@
   </div>
 </nav>
 
-<router-outlet></router-outlet>
+<app-side-nav id="mySidenav"></app-side-nav>
 
+<span style="font-size:30px;cursor:pointer; float:right" (click)="openNav()">&#9776; open</span>
+
+<div [@routeAnimations]="prepareRoute(outlet)">
+  <router-outlet #outlet="outlet"></router-outlet>
+</div>
 
 <footer class="page-footer" style="background-color: rgb(209, 206, 206); ">
   <div class="container">

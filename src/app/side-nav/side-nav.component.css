@@ -1,0 +1,9 @@
+.sideNav {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  margin-top: -64px;
+  background-color: aqua;
+  transition: 0.5s;
+  transform: translateX(0%);
+}

@@ -38,3 +38,79 @@
   background-position-y: bottom;
   background-size: 250px, 250px;
 }
+
+#subtitle {
+  margin-left: 35px;
+  color: white;
+  font-size: 22px
+}
+
+#maintitle {
+  margin-left: 35px;
+  color: rgb(86, 201, 193);
+  font-size: 45px;
+}
+
+#maintitle2 {
+  margin-left: 35px;
+  color: rgb(86, 40, 170);
+  font-size: 45px;
+}
+
+@media (max-width:992px) {
+  .main-body {
+    height: 1200px;
+  }
+
+  .main-img {
+    width: 550px;
+    height: 193px;
+  }
+
+  .subcon1 {
+    width: 100%;
+  }
+
+  .subcon2 {
+    width: 100%;
+  }
+}
+
+@media (max-width:600px) {
+  .main-body {
+    height: 800px;
+  }
+
+  .main-img {
+    width: 400px;
+    height: 140px;
+  }
+
+  .subcon {
+    margin-top: 50px;
+  }
+
+  .subcon1 {
+    height: 250px;
+    background-size: 150px, 150px;
+    font-size: 12px;
+  }
+
+  .subcon2 {
+    height: 250px;
+    background-size: 150px, 150px;
+    font-size: 12px;
+  }
+
+  #subtitle {
+    font-size: 14px;
+  }
+
+  #maintitle {
+    font-size: 30px;
+  }
+
+  #maintitle2 {
+    font-size: 30px;
+  }
+}
