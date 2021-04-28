@@ -47,3 +47,15 @@ h5 {
   height: 800px;
   float: left;
 }
+
+table tr th {
+  text-align: center;
+}
+
+table tr td {
+  text-align: center;
+}
+
+.striped {
+  width: 315px;
+}

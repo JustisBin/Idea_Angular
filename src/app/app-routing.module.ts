@@ -18,12 +18,15 @@ import { UpdateMemberComponent } from './update-member/update-member.component';
 import { PointComponent } from './point/point.component';
 import { UsePointComponent } from './use-point/use-point.component';
 import { SavePointComponent } from './save-point/save-point.component';
+import { IdeaMypageComponent } from './idea-mypage/idea-mypage.component';
+import { InterAnnoComponent } from './inter-anno/inter-anno.component';
+
 
 
 const routes: Routes = [
   { path: "", component: MainBodyComponent },
-  { path: 'main-board', component: MainBodyComponent },
-  { path: 'idea-board', component: IdeaBoardComponent },
+  { path: 'main-board', component: MainBodyComponent, data: { animation: 'HomePage' } },
+  { path: 'idea-board', component: IdeaBoardComponent, data: { animation: 'AboutPage' } },
   { path: 'anno-board', component: AnnoBoardComponent },
   { path: 'notice-board', component: NoticeBoardComponent },
   { path: 'cs-board', component: CsBoardComponent },
@@ -40,6 +43,8 @@ const routes: Routes = [
   { path: 'point', component: PointComponent },
   { path: 'use-point', component: UsePointComponent },
   { path: 'save-point', component: SavePointComponent },
+  { path: 'idea-mypage', component: IdeaMypageComponent },
+  { path: 'inter-anno', component: InterAnnoComponent },
 ];
 
 @NgModule({

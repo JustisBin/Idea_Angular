@@ -1,6 +1,6 @@
 .main-box {
   width: 100%;
-  height: 1100px;
+  height: 850px;
   text-align: center;
   background-size: contain;
   background-color: white;
@@ -28,7 +28,7 @@ h1 {
 
 .contents-box {
   width: 1050px;
-  height: 700px;
+  height: 500px;
   display: inline-block;
   margin-top: 50px;
 }
@@ -53,15 +53,7 @@ h1 {
 }
 
 #subth1 {
-  width: 50%;
-  font-weight: 400;
-  will-change: transform;
-  transition: transform 450ms;
-  text-align: center;
-}
-
-#subth2 {
-  width: 50%;
+  width: 25%;
   font-weight: 400;
   will-change: transform;
   transition: transform 450ms;
@@ -70,17 +62,29 @@ h1 {
   color: white;
 }
 
-#subth1:hover {
+#subth2 {
+  width: 25%;
+  font-weight: 400;
+  will-change: transform;
+  transition: transform 450ms;
+  text-align: center;
+}
+
+#subth2:hover {
   background-color: rgb(86, 40, 170);
   color: white;
   transition: transform 125ms;
   transform: translateY(-5px);
 }
 
-.highlight tr th {
+.contents-box table tr th {
   text-align: center;
 }
 
-.highlight tr td {
+.contents-box table tr td {
   text-align: center;
+}
+
+.pagination {
+  display: inline-block;
 }

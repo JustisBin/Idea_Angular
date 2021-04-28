@@ -42,19 +42,10 @@ h5 {
   margin-top: 50px;
 }
 
-#id {
-  text-align: center;
-  width: 100px;
-}
-
-#title {
-  text-align: center;
-}
-
-#date {
-  text-align: center;
-}
-
 th {
+  text-align: center;
+}
+
+td {
   text-align: center;
 }

@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular'
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -25,6 +26,8 @@ import { UpdateMemberComponent } from './update-member/update-member.component';
 import { PointComponent } from './point/point.component';
 import { UsePointComponent } from './use-point/use-point.component';
 import { SavePointComponent } from './save-point/save-point.component';
+import { IdeaMypageComponent } from './idea-mypage/idea-mypage.component';
+import { InterAnnoComponent } from './inter-anno/inter-anno.component';
 
 @NgModule({
   declarations: [
@@ -47,13 +50,16 @@ import { SavePointComponent } from './save-point/save-point.component';
     PointComponent,
     UsePointComponent,
     SavePointComponent,
+    IdeaMypageComponent,
+    InterAnnoComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    HttpClientModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     CKEditorModule,
     NgbModule,
-    BrowserAnimationsModule,
     ReactiveFormsModule,
   ],
   providers: [],

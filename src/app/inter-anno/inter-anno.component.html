@@ -1,50 +1,35 @@
 <div class="main-box">
   <div class="title-box">
-    <h1>포인트현황</h1>
+    <h1>내 아이디어</h1>
     <div class="submenu-box">
       <table class="tb1">
         <tr id="sub">
           <th routerLink="/update-member" id="subth2">회원정보수정</th>
-          <th id="subth1">포인트현황</th>
+          <th routerLink="/point" id="subth2">포인트현황</th>
           <th routerLink="/idea-mypage" id="subth2">내 아이디어</th>
-          <th routerLink="/inter-anno" id="subth2">관심 사업</th>
+          <th id="subth1">관심 사업</th>
         </tr>
       </table>
     </div>
   </div>
 
   <div class="contents-box">
-    <h5 style="float: left;">포인트현황</h5>
-    <hr style="width:100%; float: left;">
     <div class="row">
-      <ul>
-        <a routerLink="/point">
-          <li>현황</li>
-        </a>
-        <a routerLink="/use-point" style="color: black;">
-          <li>사용내역</li>
-        </a>
-        <a routerLink="/save-point">
-          <li>적립내역</li>
-        </a>
-      </ul>
+      <h5 style="float: left;">공고정보 게시판</h5>
+      <hr style="width:100%; float: left;">
     </div>
     <table class="highlight">
       <tr>
-        <th style="width:60%">내역</th>
-        <th style="width:20%">포인트</th>
-        <th style="width:20%">일시</th>
+        <th style="width: 20%">번호</th>
+        <th style="width: 55%">제목</th>
+        <th style="width: 25%">작성일</th>
       </tr>
-      <tr *ngIf="use_point_list.length === 0">
-        <td colspan="3">내역이 없습니다</td>
-      </tr>
-      <tr *ngFor="let use_point_list of use_point_list">
-        <td>{{ use_point_list.contents }}</td>
-        <td>{{ use_point_list.point }}</td>
-        <td>{{ use_point_list.date }}</td>
+      <tr *ngFor="let inter_list of inter_list">
+        <td>{{ inter_list.id }}</td>
+        <td>{{ inter_list.title }}</td>
+        <td>{{ inter_list.date }}</td>
       </tr>
     </table>
-    <br>
     <ul class="pagination">
       <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
       <li class="active #6a1b9a purple darken-3"><a href="#!">1</a></li>
