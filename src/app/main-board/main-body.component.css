@@ -59,12 +59,16 @@
 
 @media (max-width:992px) {
   .main-body {
-    height: 1200px;
+    height: 1100px;
   }
 
   .main-img {
     width: 550px;
     height: 193px;
+  }
+
+  .subcon {
+    margin-top: 40px;
   }
 
   .subcon1 {

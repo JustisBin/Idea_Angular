@@ -28,8 +28,6 @@ import { UsePointComponent } from './use-point/use-point.component';
 import { SavePointComponent } from './save-point/save-point.component';
 import { IdeaMypageComponent } from './idea-mypage/idea-mypage.component';
 import { InterAnnoComponent } from './inter-anno/inter-anno.component';
-import { SideNavComponent } from './side-nav/side-nav.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,7 +51,6 @@ import { SideNavComponent } from './side-nav/side-nav.component';
     SavePointComponent,
     IdeaMypageComponent,
     InterAnnoComponent,
-    SideNavComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

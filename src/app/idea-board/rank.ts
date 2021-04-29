@@ -18,5 +18,25 @@ export const rank = [
     rank: 4,
     name: '이영재',
     point: 5000
+  },
+  {
+    rank: 4,
+    name: '이영재',
+    point: 5000
+  },
+  {
+    rank: 4,
+    name: '이영재',
+    point: 5000
+  },
+  {
+    rank: 4,
+    name: '이영재',
+    point: 5000
+  },
+  {
+    rank: 4,
+    name: '이영재',
+    point: 5000
   }
 ];

@@ -9,13 +9,27 @@
       <li><a routerLink="/login">로그인</a></li>
     </ul>
   </div>
+  <span style="cursor:pointer;" (click)="openNav()"><i class="material-icons">menu</i></span>
 </nav>
 
-<app-side-nav id="mySidenav"></app-side-nav>
+<div class="left-box" [ngStyle]="{'display' : hidden}" (click)="closeNav()">
+</div>
 
-<span style="font-size:30px;cursor:pointer; float:right" (click)="openNav()">&#9776; open</span>
+<div class="openSidenav" [ngStyle]="{'display' : hidden}">
+  <ul>
+    <li id="img"><img (click)="closeNav()" class="sub-logo-img" src="http://bicdataidea.com/img/img_logo.png"></li>
+    <hr style="margin-top:-5px;">
+    <li><a (click)="closeNav()" routerLink="/idea-board">아이디어 플랫폼</a></li>
+    <li><a (click)="closeNav()" routerLink="/anno-board">공고정보 게시판</a></li>
+    <li><a (click)="closeNav()" routerLink="/notice-board">게시판</a></li>
+    <li id="sub"><a (click)="closeNav()" routerLink="/notice-board">공지사항</a></li>
+    <li id="sub"><a (click)="closeNav()" routerLink="/cs-board">문의게시판</a></li>
+    <li><a (click)="closeNav()" routerLink="/contact-board">고객센터</a></li>
+    <li><a (click)="closeNav()" routerLink="/login">로그인</a></li>
+  </ul>
+</div>
 
-<div [@routeAnimations]="prepareRoute(outlet)">
+<div [@fade]="prepareRoute(outlet)">
   <router-outlet #outlet="outlet"></router-outlet>
 </div>
 

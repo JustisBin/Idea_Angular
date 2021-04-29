@@ -2,6 +2,10 @@
   margin-top: 18px;
 }
 
+ul a {
+  color: rgb(91, 104, 117)
+}
+
 ul a:link {
   color: rgb(91, 104, 117);
 }
@@ -10,4 +14,89 @@ ul a:visited {
   color: rgb(91, 104, 117);
 }
 
-@media(max-width: 992px) {}
+.openSidenav {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  margin-top: -64px;
+  transition: 0.5s;
+  background-color: white;
+  right: 0;
+  z-index: 999;
+}
+
+.left-box {
+  position: fixed;
+  width: 85%;
+  height: 100%;
+  top: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  z-index: 888;
+}
+
+.material-icons {
+  font-size: 35px;
+  color: black;
+}
+
+span {
+  display: none;
+}
+
+.sub-logo-img {
+  width: 150px;
+  height: 25px;
+  margin-top: -10px;
+}
+
+#img {
+  background-color: white;
+}
+
+#sub {
+  font-size: 14px;
+  padding: 10px;
+  padding-left: 60px;
+  font-weight: 600;
+}
+
+.openSidenav li {
+  padding: 15px;
+  font-size: 17px;
+  padding-left: 20px;
+  font-weight: 550;
+}
+
+.openSidenav li:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+@media(max-width: 992px) {
+  span {
+    display: block;
+    float: right;
+    margin-right: 30px;
+    margin-top: -62px;
+  }
+
+  .nav-wrapper {
+    width: 60%;
+  }
+}
+
+@media(max-width: 600px) {
+  span {
+    display: block;
+    float: right;
+    margin-top: -56px;
+  }
+
+  .logo-img {
+    width: 150px;
+    height: 25px;
+  }
+
+  .nav-wrapper {
+    width: 50%;
+  }
+}
