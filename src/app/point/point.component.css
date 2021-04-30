@@ -1,10 +1,10 @@
 .main-box {
   width: 100%;
-  height: 950px;
   text-align: center;
   background-size: contain;
   background-color: white;
   margin-top: -41px;
+  margin-bottom: 50px;
 }
 
 .title-box {
@@ -28,18 +28,17 @@ h1 {
 
 
 .contents-box {
-  width: 1050px;
-  height: 850px;
+  width: 90%;
   display: inline-block;
   margin-top: 50px;
 }
 
 .submenu-box {
-  width: 1050px;
-  height: 80px;
+  width: 60%;
+  height: 60px;
   background-color: rgb(233, 233, 233);
   display: inline-block;
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 .tb1 {
@@ -49,7 +48,7 @@ h1 {
 }
 
 #sub {
-  font-size: 20px;
+  font-size: 15px;
   font-family: 'Gothic A1', sans-serif;
 }
 
@@ -103,7 +102,7 @@ ul a {
 }
 
 .subbox1 {
-  width: 250px;
+  width: 200px;
   height: 320px;
   float: left;
   margin-left: 50px;
@@ -135,4 +134,43 @@ p {
   float: right;
   font-family: 'Gothic A1', sans-serif;
   font-size: 20px;
+}
+
+#underline {
+  display: none;
+  width: 80px;
+  background-color: rgb(86, 40, 170);
+  height: 3px;
+}
+
+@media (max-width:992px) {
+  .title-box {
+    background-position-y: 0px;
+  }
+}
+
+@media (max-width:600px) {
+  .submenu-box {
+    width: 80%;
+  }
+
+  #underline {
+    display: block;
+    margin-top: -10px;
+  }
+
+  .subbox1 {
+    margin: 0px;
+    width: 100%;
+    height: 200px;
+  }
+
+  .subbox2 {
+    margin: 0px;
+    width: 100%;
+  }
+
+  .line {
+    display: none;
+  }
 }

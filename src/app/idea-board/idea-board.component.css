@@ -66,13 +66,24 @@ table tr td {
   margin-top: 40px;
 }
 
+.left-box {
+  width: 66%;
+  float: left;
+}
+
+.right-box {
+  width: 33%;
+  float: left;
+  margin-top: 23px;
+}
+
+#autocomplete-input {
+  width: 88%;
+}
+
 @media (max-width:992px) {
   .title-box {
     background-position-y: 0px;
-  }
-
-  .contents-box {
-    width: 90%;
   }
 
   .rank-box {
@@ -98,5 +109,23 @@ table tr td {
 
   .list-box table {
     width: 100%;
+  }
+
+  .left-box {
+    display: none;
+  }
+
+  .right-box {
+    width: 100%;
+  }
+
+  #autocomplete-input {
+    width: 95%;
+  }
+}
+
+@media (max-width:600px) {
+  #autocomplete-input {
+    width: 90%;
   }
 }

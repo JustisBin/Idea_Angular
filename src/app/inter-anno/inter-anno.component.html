@@ -20,9 +20,9 @@
     </div>
     <table class="highlight">
       <tr>
-        <th style="width: 20%">번호</th>
-        <th style="width: 55%">제목</th>
-        <th style="width: 25%">작성일</th>
+        <th>번호</th>
+        <th>제목</th>
+        <th>작성일</th>
       </tr>
       <tr *ngFor="let inter_list of inter_list">
         <td>{{ inter_list.id }}</td>
@@ -30,14 +30,20 @@
         <td>{{ inter_list.date }}</td>
       </tr>
     </table>
-    <ul class="pagination">
-      <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-      <li class="active #6a1b9a purple darken-3"><a href="#!">1</a></li>
-      <li class="waves-effect"><a href="#!">2</a></li>
-      <li class="waves-effect"><a href="#!">3</a></li>
-      <li class="waves-effect"><a href="#!">4</a></li>
-      <li class="waves-effect"><a href="#!">5</a></li>
-      <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-    </ul>
+    <div class="left-box">
+      <ul class="pagination">
+        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+        <li class="active #6a1b9a purple darken-3"><a href="#!">1</a></li>
+        <li class="waves-effect"><a href="#!">2</a></li>
+        <li class="waves-effect"><a href="#!">3</a></li>
+        <li class="waves-effect"><a href="#!">4</a></li>
+        <li class="waves-effect"><a href="#!">5</a></li>
+        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+      </ul>
+    </div>
+    <div class="right-box">
+      <a href="#!"><i class="material-icons" style="float:right; margin-top:15px;">search</i></a>
+      <input type="text" id="autocomplete-input" class="autocomplete">
+    </div>
   </div>
 </div>

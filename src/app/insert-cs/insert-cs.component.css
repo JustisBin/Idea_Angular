@@ -1,9 +1,9 @@
 .main-box {
   width: 100%;
-  height: 1200px;
   text-align: center;
   background-color: white;
   margin-top: -41px;
+  margin-bottom: 50px;
 }
 
 .title-box {
@@ -26,8 +26,7 @@ h1 {
 }
 
 .contents-box {
-  width: 1050px;
-  height: 800px;
+  width: 90%;
   display: inline-block;
   margin-top: 50px;
 }
@@ -35,4 +34,10 @@ h1 {
 :host ::ng-deep .ck-editor__editable_inline {
   min-height: 330px;
   max-height: 330px;
+}
+
+@media (max-width:992px) {
+  .title-box {
+    background-position-y: 0px;
+  }
 }
