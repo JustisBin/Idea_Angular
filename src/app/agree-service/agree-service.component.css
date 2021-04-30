@@ -27,7 +27,7 @@ h1 {
 }
 
 h6 {
-  margin-right: 190px;
+  margin-right: 100px;
 }
 
 .contents-box {
@@ -67,14 +67,27 @@ span {
     background-position-y: 0px;
   }
 
+  .row {
+    width: 600px;
+  }
+
   .row2 {
+    width: 600px;
     margin-left: 0;
   }
 }
 
 @media (max-width:620px) {
   textarea {
-    width: 70%;
+    width: 100%;
     float: left;
+  }
+
+  .row {
+    width: 100%
+  }
+
+  .row2 {
+    width: 100%
   }
 }
