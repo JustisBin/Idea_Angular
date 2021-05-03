@@ -1,9 +1,9 @@
 .main-body {
   width: 100%;
+  height: 850px;
   text-align: center;
   background-image: url('http://bicdataidea.com/img/img_intro_bg.png');
   background-size: cover;
-  margin-bottom: 50px;
 }
 
 .main-img {
@@ -58,6 +58,10 @@
 }
 
 @media (max-width:992px) {
+  .main-body {
+    height: 1050px;
+  }
+
   .main-img {
     width: 550px;
     height: 193px;
@@ -77,6 +81,10 @@
 }
 
 @media (max-width:600px) {
+  .main-body {
+    height: 800px;
+  }
+
   .main-img {
     width: 370px;
     height: 130px;
