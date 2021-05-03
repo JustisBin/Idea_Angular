@@ -89,8 +89,13 @@ table {
 
 @media (max-width:600px) {
   .submenu-box {
-    width: 80%;
-    margin-top: 19px;
+    width: 90%;
+    margin-top: 23px;
+    height: 50px;
+  }
+
+  #sub {
+    font-size: 13px;
   }
 
   .title-box {
@@ -100,5 +105,9 @@ table {
   h1 {
     padding-top: 90px;
     font-size: 35px;
+  }
+
+  .row {
+    width: 100%;
   }
 }

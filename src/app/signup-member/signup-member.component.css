@@ -52,4 +52,8 @@ h1 {
     padding-top: 90px;
     font-size: 35px;
   }
+
+  .row {
+    width: 100%;
+  }
 }
