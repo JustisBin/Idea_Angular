@@ -42,3 +42,14 @@ h1 {
     background-position-y: 0px;
   }
 }
+
+@media (max-width:500px) {
+  .title-box {
+    height: 200px;
+  }
+
+  h1 {
+    padding-top: 90px;
+    font-size: 35px;
+  }
+}

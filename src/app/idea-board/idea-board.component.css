@@ -128,4 +128,13 @@ table tr td {
   #autocomplete-input {
     width: 90%;
   }
+
+  .title-box {
+    height: 200px;
+  }
+
+  h1 {
+    padding-top: 90px;
+    font-size: 35px;
+  }
 }

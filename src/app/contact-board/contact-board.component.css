@@ -36,6 +36,16 @@ h5 {
   margin-top: 50px;
 }
 
+#email_box {
+  width: 61.9%;
+  margin-left: 115px;
+}
+
+#title_box {
+  width: 62%;
+  margin-left: 123px;
+}
+
 :host ::ng-deep .ck-editor__editable_inline {
   min-height: 330px;
   max-height: 330px;
@@ -44,5 +54,24 @@ h5 {
 @media (max-width:992px) {
   .title-box {
     background-position-y: 0px;
+  }
+}
+
+@media (max-width:600px) {
+  #email_box {
+    margin-left: 30px;
+  }
+
+  #title_box {
+    margin-left: 38px;
+  }
+
+  .title-box {
+    height: 200px;
+  }
+
+  h1 {
+    padding-top: 90px;
+    font-size: 35px;
   }
 }

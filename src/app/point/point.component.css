@@ -152,6 +152,7 @@ p {
 @media (max-width:600px) {
   .submenu-box {
     width: 80%;
+    margin-top: 19px;
   }
 
   #underline {
@@ -172,5 +173,14 @@ p {
 
   .line {
     display: none;
+  }
+
+  .title-box {
+    height: 200px;
+  }
+
+  h1 {
+    padding-top: 90px;
+    font-size: 35px;
   }
 }

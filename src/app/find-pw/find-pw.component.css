@@ -70,4 +70,13 @@ h2 {
     width: 90%;
     margin: 5px;
   }
+
+  .title-box {
+    height: 200px;
+  }
+
+  h1 {
+    padding-top: 90px;
+    font-size: 35px;
+  }
 }

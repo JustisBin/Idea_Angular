@@ -117,5 +117,15 @@ ul a {
 @media (max-width:600px) {
   .submenu-box {
     width: 80%;
+    margin-top: 19px;
+  }
+
+  .title-box {
+    height: 200px;
+  }
+
+  h1 {
+    padding-top: 90px;
+    font-size: 35px;
   }
 }

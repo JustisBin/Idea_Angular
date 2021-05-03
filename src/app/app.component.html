@@ -7,6 +7,7 @@
       <li><a routerLink="/notice-board">게시판</a></li>
       <li><a routerLink="/contact-board">고객센터</a></li>
       <li><a routerLink="/login">로그인</a></li>
+      <li><a routerLink="/check-pw">마이페이지</a></li>
     </ul>
   </div>
   <span style="cursor:pointer;" (click)="openNav()"><i class="material-icons">menu</i></span>
@@ -39,6 +40,9 @@
     </a>
     <a (click)="closeNav()" routerLink="/login">
       <li>로그인</li>
+    </a>
+    <a (click)="closeNav()" routerLink="/check-pw">
+      <li>마이페이지</li>
     </a>
   </ul>
 </div>

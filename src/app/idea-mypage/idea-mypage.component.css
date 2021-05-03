@@ -128,9 +128,19 @@ h1 {
 @media (max-width:600px) {
   .submenu-box {
     width: 80%;
+    margin-top: 19px;
   }
 
   #autocomplete-input {
     width: 90%;
+  }
+
+  .title-box {
+    height: 200px;
+  }
+
+  h1 {
+    padding-top: 90px;
+    font-size: 35px;
   }
 }
