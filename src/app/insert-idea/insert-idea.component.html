@@ -14,34 +14,29 @@
           <div class="input-field inline" id="email_box">
             <input disabled value="정의빈" id="disabled" type="text" class="validate">
           </div>
-          <hr style="width:100%; float: left;">
         </div>
         <div class="col s12">
           제 목
           <div class=" input-field inline" id="title_box">
-            <textarea id="textarea1" class="materialize-textarea"></textarea>
-            <label for="textarea1">Title</label>
+            <textarea id="textarea1" class="materialize-textarea" maxlength="30"></textarea>
           </div>
-          <hr style="width:100%; float: left;">
         </div>
-        <div class="col s12">
+        <div class="col s12" style="margin-top: 20px;">
           <ckeditor id="editor" [editor]="Editor"></ckeditor>
         </div>
         <div class="col s12">
           <div class="file-field input-field">
             <div class="btn purple darken-4">
               <input type="file" multiple>
-              <span>File</span>
+              <span>파일선택</span>
             </div>
             <div class="file-path-wrapper">
-              <input class="file-path validate" type="text" placeholder="Upload one or more files">
+              <input class="file-path validate" type="text" placeholder="선택된 파일 없음">
             </div>
           </div>
-          <hr style="width:100%; float: left;">
         </div>
         <div class="col s12">
-          <a routerLink="/idea-board" class="waves-effect waves-light btn-large purple darken-4" style="float: right;"
-            (click)="submit()">아이디어
+          <a routerLink="/idea-board" class="btn purple darken-4" style="float: right;" (click)="submit()">아이디어
             등록</a>
         </div>
       </form>

@@ -34,16 +34,8 @@ h1 {
 
 .submenu-box {
   width: 60%;
-  height: 60px;
-  background-color: rgb(233, 233, 233);
   display: inline-block;
-  margin-top: 60px;
-}
-
-table {
-  width: 100%;
-  height: 100%;
-  border: 0;
+  margin-top: 65px;
 }
 
 #sub {
@@ -54,26 +46,18 @@ table {
 #subth1 {
   width: 25%;
   font-weight: 400;
-  will-change: transform;
-  transition: transform 450ms;
   text-align: center;
   background-color: rgb(86, 40, 170);
   color: white;
+  border: 2px solid rgb(86, 40, 170);
 }
 
 #subth2 {
   width: 25%;
   font-weight: 400;
-  will-change: transform;
-  transition: transform 450ms;
+  background-color: rgb(233, 233, 233);
+  border: 2px solid rgb(233, 233, 233);
   text-align: center;
-}
-
-#subth2:hover {
-  background-color: rgb(86, 40, 170);
-  color: white;
-  transition: transform 125ms;
-  transform: translateY(-5px);
 }
 
 .row {
@@ -82,6 +66,11 @@ table {
 }
 
 @media (max-width:992px) {
+  .submenu-box {
+    width: 80%;
+    margin-top: 65px;
+  }
+
   .title-box {
     background-position-y: 0px;
   }
@@ -91,7 +80,6 @@ table {
   .submenu-box {
     width: 90%;
     margin-top: 23px;
-    height: 50px;
   }
 
   #sub {
@@ -108,6 +96,20 @@ table {
   }
 
   .row {
+    width: 100%;
+  }
+
+  .contents {
+    width: 70%;
+  }
+}
+
+@media (max-width:350px) {
+  .contents {
+    width: 60%;
+  }
+
+  .submenu-box {
     width: 100%;
   }
 }

@@ -46,8 +46,8 @@ h2 {
 }
 
 button {
-  margin: 10px;
   width: 110px;
+  margin: 10px;
 }
 
 @media (max-width: 992px) {
@@ -60,7 +60,8 @@ button {
   }
 
   button {
-    width: 100%
+    width: 100%;
+    margin-left: 0px;
   }
 }
 

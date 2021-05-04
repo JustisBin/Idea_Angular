@@ -7,43 +7,34 @@
       <h5 style="float: left;">문의글 작성</h5>
       <hr style="width:100%; float: left;">
     </div>
-    <div class="row">
-      <form class="col s12" style="text-align: left;">
-        <div class="col s12" style="margin-top:-20px">
-          작성자명
-          <div class="input-field inline" id="email_box">
-            <input disabled value="정의빈" id="disabled" type="text" class="validate">
-          </div>
-          <hr style="width:100%; float: left;">
+    <form class="main-form">
+      <div class="row">
+        이메일
+        <div id="email_box" class=" input-field inline">
+          <input id="email" type="email" class="validate" maxlength="40">
         </div>
-        <div class="col s12">
-          제 목
-          <div class=" input-field inline" id="title_box">
-            <textarea id="textarea1" class="materialize-textarea"></textarea>
-            <label for="textarea1">Title</label>
-          </div>
-          <hr style="width:100%; float: left;">
+      </div>
+      <div class="row" style="margin-top:23px">
+        비밀글여부
+        <div id="secret-box" class=" input-field inline">
+          <label>
+            <input type="checkbox" />
+            <span>체크시 본인과 관리자 외에 게시물을 볼 수 없습니다</span>
+          </label>
         </div>
-        <div class="col s12">
-          <ckeditor style="min-height: 300px; max-height: 400px;" id="editor" [editor]="Editor"></ckeditor>
+      </div>
+      <div class="row">
+        제목
+        <div id="title_box" class=" input-field inline">
+          <textarea id="textarea1" class="materialize-textarea" maxlength="30"></textarea>
         </div>
-        <div class="col s12">
-          <div class="file-field input-field">
-            <div class="btn purple darken-4">
-              <input type="file" multiple>
-              <span>File</span>
-            </div>
-            <div class="file-path-wrapper">
-              <input class="file-path validate" type="text" placeholder="Upload one or more files">
-            </div>
-          </div>
-        </div>
-        <div class="col s12" id="csbutton">
-          <a routerLink="/cs-board" class="waves-effect waves-light btn-large purple darken-4" style="float: right;"
-            (click)="submit()">문의글
-            등록</a>
-        </div>
-      </form>
-    </div>
+      </div>
+      <div class="col s12" style="margin-top: 20px">
+        <ckeditor id="editor" [editor]="Editor"></ckeditor>
+      </div>
+      <div class="col s12" style="margin-top: 20px;">
+        <a routerLink="/main-board" class="btn purple darken-4" style="float: right;" (click)="submit()">문의하기</a>
+      </div>
+    </form>
   </div>
 </div>

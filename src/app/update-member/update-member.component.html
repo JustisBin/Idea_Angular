@@ -2,7 +2,7 @@
   <div class="title-box">
     <h1>회원정보수정</h1>
     <div class="submenu-box">
-      <table>
+      <table class="tb1">
         <tr id="sub">
           <th id="subth1">회원정보수정</th>
           <th routerLink="/point" id="subth2">포인트현황</th>
@@ -21,27 +21,28 @@
         <table>
           <tr>
             <td>이메일</td>
-            <td><input id="email" type="email" class="validate">
+            <td class="contents"><input id="email" type="email" class="validate" minlength="10" maxlength="30">
               <label for="email">Email</label></td>
           </tr>
           <tr>
             <td>이름</td>
-            <td><input id="name" type="text" class="validate">
+            <td class="contents"><input id="name" type="text" class="validate" class="validate" minlength="2"
+                maxlength="20">
               <label for="name">User Name</label></td>
           </tr>
           <tr>
             <td>비밀번호</td>
-            <td><input id="password" type="password" class="validate" data-length="20">
+            <td class="contents"><input id="password" type="password" class="validate" minlength="6" data-length="20">
               <label for="password">비밀번호는 영문,숫자 포함 6자리 이상 입력해주세요</label></td>
           </tr>
           <tr>
             <td>비밀번호 확인</td>
-            <td><input id="password" type="password" class="validate" data-length="20">
+            <td class="contents"><input id="password" type="password" class="validate" minlength="6" data-length="20">
               <label for="password">비밀번호확인은 영문,숫자 포함 6자리 이상 입력해주세요</label></td>
           </tr>
           <tr>
             <td>성별</td>
-            <td>
+            <td class="contents">
               <select class="browser-default">
                 <option value="" disabled selected>성별을 선택해주세요</option>
                 <option value="1">남성</option>
@@ -51,24 +52,24 @@
           </tr>
           <tr>
             <td>생년월일</td>
-            <td><input id="last_name" type="text" class="validate">
-              <label for="last_name">YYYY-MM-DD</label></td>
+            <td class="contents"><input id="birth" type="text" class="validate" pattern="[0-9]{4}-[0-12]{2}-[0-31]{2}">
+              <label for="birth">YYYY-MM-DD / "-"포함 왼쪽 형식에 맞게 입력해주세요</label></td>
           </tr>
           <tr>
             <td>전화번호</td>
-            <td>
-              <input id="telephone" type="tel" class="validate">
-              <label for="telephone">000-0000-0000</label></td>
+            <td class="contents">
+              <input id="telephone" type="tel" class="validate" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}">
+              <label for="telephone">010-1234-5678 / "-"포함 왼쪽 형식에 맞게 입력해주세요</label></td>
           </tr>
           <tr>
             <td>소속</td>
-            <td>
+            <td class="contents">
               <input id="division" type="text" class="validate">
               <label for="division">사업자가 아닌 경우 예비창업자 기재</label></td>
           </tr>
           <tr>
             <td>시도</td>
-            <td>
+            <td class="contents">
               <select class="browser-default">
                 <option value="" disabled selected>시도를 선택해주세요</option>
                 <option value="1">서울특별시</option>
@@ -94,8 +95,7 @@
       </form>
     </div>
     <div class="row2">
-      <a routerLink="/main-board" class="waves-effect waves-light btn-large deep-purple darken-2"
-        style="width: 200px;">수정</a>
+      <a routerLink="/main-board" class="btn deep-purple darken-2" style="width: 200px;">수정</a>
     </div>
   </div>
 </div>
