@@ -34,7 +34,6 @@ h1 {
 
 .submenu-box {
   width: 60%;
-  height: 60px;
   background-color: rgb(233, 233, 233);
   display: inline-block;
   margin-top: 60px;
@@ -42,7 +41,6 @@ h1 {
 
 .tb1 {
   width: 100%;
-  height: 100%;
   border: 0;
 }
 
@@ -58,8 +56,6 @@ h1 {
 #subth1 {
   width: 50%;
   font-weight: 400;
-  will-change: transform;
-  transition: transform 450ms;
   text-align: center;
   background-color: rgb(86, 40, 170);
   color: white;
@@ -68,16 +64,7 @@ h1 {
 #subth2 {
   width: 50%;
   font-weight: 400;
-  will-change: transform;
-  transition: transform 450ms;
   text-align: center;
-}
-
-#subth2:hover {
-  background-color: rgb(86, 40, 170);
-  color: white;
-  transition: transform 125ms;
-  transform: translateY(-5px);
 }
 
 .contents-box table tr th {
@@ -116,6 +103,11 @@ h1 {
 }
 
 @media (max-width:992px) {
+  .submenu-box {
+    width: 80%;
+    margin-top: 40px;
+  }
+
   .title-box {
     background-position-y: 0px;
   }
@@ -135,10 +127,15 @@ h1 {
 
 @media (max-width:600px) {
   .submenu-box {
-    width: 80%;
-    height: 60px;
-    display: inline-block;
-    margin-top: 19px;
+    margin-top: 22px;
+  }
+
+  #sub {
+    font-size: 13px;
+  }
+
+  .tb1 {
+    height: 40px;
   }
 
   .highlight tr th:nth-child(1) {
@@ -169,5 +166,4 @@ h1 {
     padding-top: 90px;
     font-size: 35px;
   }
-
 }

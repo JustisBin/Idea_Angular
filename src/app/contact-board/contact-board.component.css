@@ -59,11 +59,13 @@ h5 {
 
 @media (max-width:600px) {
   #email_box {
-    margin-left: 30px;
+    width: 100%;
+    margin-left: 0px;
   }
 
   #title_box {
-    margin-left: 38px;
+    width: 100%;
+    margin-left: 0px;
   }
 
   .title-box {

@@ -1,9 +1,9 @@
 .main-body {
   width: 100%;
-  height: 850px;
   text-align: center;
   background-image: url('http://bicdataidea.com/img/img_intro_bg.png');
   background-size: cover;
+  margin-bottom: 50px;
 }
 
 .main-img {
@@ -12,7 +12,6 @@
 
 .subcon {
   width: 90%;
-  height: 350px;
   margin-top: 100px;
   display: inline-block;
 }
@@ -58,10 +57,6 @@
 }
 
 @media (max-width:992px) {
-  .main-body {
-    height: 1050px;
-  }
-
   .main-img {
     width: 550px;
     height: 193px;
@@ -81,12 +76,8 @@
 }
 
 @media (max-width:600px) {
-  .main-body {
-    height: 800px;
-  }
-
   .main-img {
-    width: 370px;
+    width: 360px;
     height: 130px;
   }
 
@@ -97,14 +88,12 @@
 
   .subcon1 {
     width: 100%;
-    height: 250px;
     background-size: 150px, 150px;
     font-size: 12px;
   }
 
   .subcon2 {
     width: 100%;
-    height: 250px;
     background-size: 150px, 150px;
     font-size: 12px;
   }
@@ -119,5 +108,12 @@
 
   #maintitle2 {
     font-size: 30px;
+  }
+}
+
+@media (max-width: 350px) {
+  .main-img {
+    width: 270px;
+    height: 96px;
   }
 }

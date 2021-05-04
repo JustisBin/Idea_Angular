@@ -46,8 +46,8 @@ h2 {
 }
 
 button {
-  width: 25%;
   margin: 10px;
+  width: 110px;
 }
 
 @media (max-width: 992px) {
@@ -60,23 +60,13 @@ button {
   }
 
   button {
-    width: 90%;
-    margin: 5px;
-  }
-
-  #sub-button {
-    width: 44%;
+    width: 100%
   }
 }
 
 @media (max-width: 600px) {
   .login-box {
-    width: 90%;
-  }
-
-  button {
-    width: 90%;
-    margin: 5px;
+    width: 100%;
   }
 
   .title-box {
