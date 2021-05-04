@@ -31,13 +31,22 @@ h1 {
   margin-top: 50px;
 }
 
+.main-form {
+  width: 90%;
+  text-align: left;
+  font-size: 17px;
+  display: inline-block;
+}
+
 #email_box {
-  margin-left: 100px;
+  width: 61.9%;
+  margin-left: 115px;
 }
 
 #title_box {
   width: 62%;
   margin-left: 121px;
+  margin-left: 130px;
 }
 
 :host ::ng-deep .ck-editor__editable_inline {
