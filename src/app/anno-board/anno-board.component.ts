@@ -15,6 +15,7 @@ export class AnnoBoardComponent implements OnInit {
   anno_list: any = [];
   pages: any = [];
   currentPage: number = 1;
+  searchTitle: string = "";
 
   ngOnInit(): void {
     this.http.get<any>('http://152.67.207.28:3000/board/anno/page').subscribe(data => {
@@ -30,5 +31,9 @@ export class AnnoBoardComponent implements OnInit {
     this.http.get<any>(`http://152.67.207.28:3000/board/anno/listanno?page=${page}&pageSize=10`).subscribe(data => {
       this.anno_list = data
     })
+  }
+
+  search() {
+
   }
 }
