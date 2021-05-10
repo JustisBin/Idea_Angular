@@ -69,6 +69,11 @@ td {
   float: left;
 }
 
+.left-box2 {
+  width: 66%;
+  float: left;
+}
+
 .right-box {
   width: 33%;
   float: left;
@@ -85,6 +90,10 @@ td {
   }
 
   .left-box {
+    display: none;
+  }
+
+  .left-box2 {
     display: none;
   }
 

@@ -14,8 +14,12 @@ export class AnnoBoardComponent implements OnInit {
 
   anno_list: any = [];
   pages: any = [];
+  searchPages: any = [];
   currentPage: number = 1;
   searchTitle: string = "";
+  text: any = "";
+  hidden = 'none'
+  block = 'block'
 
   ngOnInit(): void {
     this.http.get<any>('http://152.67.207.28:3000/board/anno/page').subscribe(data => {
@@ -33,7 +37,22 @@ export class AnnoBoardComponent implements OnInit {
     })
   }
 
-  search() {
+  getSearch() {
+    this.text = (<HTMLInputElement>document.getElementById('autocomplete-input')).value;
+    this.search(this.text)
+  }
 
+  search(searchText: string) {
+    this.http.get<any>(`http://152.67.207.28:3000/board/anno/searchanno?title=${searchText}&page=1&pageSize=10`).subscribe(data => {
+      this.anno_list = data
+    })
+
+    this.http.get<any>(`http://152.67.207.28:3000/board/anno/search/page?title=${searchText}`).subscribe(data => {
+      this.searchPages = data
+      console.log(this.searchPages)
+    })
+
+    this.hidden = "block"
+    this.block = "none"
   }
 }
