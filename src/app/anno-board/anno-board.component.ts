@@ -60,7 +60,7 @@ export class AnnoBoardComponent implements OnInit {
         newCell.colSpan = 3;
 
         this.http.get<any>(`http://${this.server}:3000/board/anno/openanno/${id}`).subscribe(data => {
-          this.anno_content = data[0].anno_contents
+          this.anno_content = `<div style=\"float: left;\"> 출처 : ${data[0].anno_ref} </div><div style=\"float: right; margin-top: -3px;\"><a href=\"${data[0].anno_link}\" target=\"_blank\"><button style=\"border: 1px solid black; height: 30px; background-color: white;\">출처 링크 바로가기</button></a><button style=\"border: 1px solid black; height: 30px; background-color: white; margin-left: 30px;\">즐겨찾기</button></div><hr style=\"margin-top: 40px\">` + data[0].anno_contents
           newCell.innerHTML = this.anno_content;
           this.count = index + 2
         })
@@ -74,7 +74,7 @@ export class AnnoBoardComponent implements OnInit {
       newCell.colSpan = 3;
 
       this.http.get<any>(`http://${this.server}:3000/board/anno/openanno/${id}`).subscribe(data => {
-        this.anno_content = "<div><h4 style=\"background-color:red;\">asdfa</h4></div><hr>" + data[0].anno_contents
+        this.anno_content = `<div style=\"float: left;\"> 출처 : ${data[0].anno_ref} </div><div style=\"float: right; margin-top: -3px;\"><a href=\"${data[0].anno_link}\" target=\"_blank\"><button style=\"border: 1px solid black; height: 30px; background-color: white;\">출처 링크 바로가기</button></a><button style=\"border: 1px solid black; height: 30px; background-color: white; margin-left: 30px;\">즐겨찾기</button></div><hr style=\"margin-top: 40px\">` + data[0].anno_contents
         newCell.innerHTML = this.anno_content;
         this.count = index + 2
       })
