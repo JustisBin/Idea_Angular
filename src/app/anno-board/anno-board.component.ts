@@ -28,6 +28,7 @@ export class AnnoBoardComponent implements OnInit {
   ngOnInit(): void {
     this.http.get<any>(`http://${this.server}:3000/board/anno/page`).subscribe(data => {
       this.pages = data
+      console.log(this.pages)
     })
 
     this.http.get<any>(`http://${this.server}:3000/board/anno/listanno?page=1&pageSize=10`).subscribe(data => {
