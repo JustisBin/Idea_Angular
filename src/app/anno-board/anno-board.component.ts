@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, throwError } from 'rxjs';
-import { catchError, retry } from 'rxjs/operators';
 
 @Component({
   selector: 'app-anno-board',
@@ -11,6 +9,8 @@ import { catchError, retry } from 'rxjs/operators';
 export class AnnoBoardComponent implements OnInit {
 
   constructor(private http: HttpClient) { }
+  server: string = "localhost"
+  // 152.67.207.28
 
   anno_list: any = [];
   pages: any = [];
@@ -18,23 +18,72 @@ export class AnnoBoardComponent implements OnInit {
   currentPage: number = 1;
   searchTitle: string = "";
   text: any = "";
+  anno_content: string = "";
+  anno_link: string = "";
+  anno_ref: string = ""
+  count: number = 0;
   hidden = 'none'
   block = 'block'
 
   ngOnInit(): void {
-    this.http.get<any>('http://152.67.207.28:3000/board/anno/page').subscribe(data => {
+    this.http.get<any>(`http://${this.server}:3000/board/anno/page`).subscribe(data => {
       this.pages = data
     })
 
-    this.http.get<any>(`http://152.67.207.28:3000/board/anno/listanno?page=1&pageSize=10`).subscribe(data => {
+    this.http.get<any>(`http://${this.server}:3000/board/anno/listanno?page=1&pageSize=10`).subscribe(data => {
       this.anno_list = data
     })
   }
 
   setPage(page: number) {
-    this.http.get<any>(`http://152.67.207.28:3000/board/anno/listanno?page=${page}&pageSize=10`).subscribe(data => {
+    this.http.get<any>(`http://${this.server}:3000/board/anno/listanno?page=${page}&pageSize=10`).subscribe(data => {
       this.anno_list = data
     })
+  }
+
+  setSearchPage(page: number) {
+    this.http.get<any>(`http://${this.server}:3000/board/anno/searchanno?title=${this.searchTitle}&page=${page}&pageSize=10`).subscribe(data => {
+      this.anno_list = data
+      this.anno_content = data.anno_contents
+    })
+  }
+
+  getContents(id: number, index: number) {
+    const table = (<HTMLTableElement>document.getElementById('list'));
+    const totalRow = table.rows.length
+
+    if (totalRow > this.anno_list.length + 1) {
+      if (this.count != index + 2) {
+        this.closeContents(this.count);
+        const newRow = table.insertRow(index + 2)
+        const newCell = newRow.insertCell(0)
+        newCell.colSpan = 3;
+
+        this.http.get<any>(`http://${this.server}:3000/board/anno/openanno/${id}`).subscribe(data => {
+          this.anno_content = data[0].anno_contents
+          newCell.innerHTML = this.anno_content;
+          this.count = index + 2
+        })
+      } else {
+        this.closeContents(this.count);
+      }
+
+    } else {
+      const newRow = table.insertRow(index + 2)
+      const newCell = newRow.insertCell(0)
+      newCell.colSpan = 3;
+
+      this.http.get<any>(`http://${this.server}:3000/board/anno/openanno/${id}`).subscribe(data => {
+        this.anno_content = "<div><h4 style=\"background-color:red;\">asdfa</h4></div><hr>" + data[0].anno_contents
+        newCell.innerHTML = this.anno_content;
+        this.count = index + 2
+      })
+    }
+  }
+
+  closeContents(index: number) {
+    const table = (<HTMLTableElement>document.getElementById('list'));
+    const deleteRow = table.deleteRow(index);
   }
 
   getSearch() {
@@ -43,16 +92,17 @@ export class AnnoBoardComponent implements OnInit {
   }
 
   search(searchText: string) {
-    this.http.get<any>(`http://152.67.207.28:3000/board/anno/searchanno?title=${searchText}&page=1&pageSize=10`).subscribe(data => {
+    this.http.get<any>(`http://${this.server}:3000/board/anno/searchanno?title=${searchText}&page=1&pageSize=10`).subscribe(data => {
       this.anno_list = data
     })
 
-    this.http.get<any>(`http://152.67.207.28:3000/board/anno/search/page?title=${searchText}`).subscribe(data => {
+    this.http.get<any>(`http://${this.server}:3000/board/anno/search/page?title=${searchText}`).subscribe(data => {
       this.searchPages = data
-      console.log(this.searchPages)
     })
+    this.searchTitle = searchText
 
-    this.hidden = "block"
-    this.block = "none"
+    if (searchText === "") {
+      alert("검색어를 입력해주세요!")
+    }
   }
 }

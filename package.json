@@ -30,6 +30,7 @@
     "@ckeditor/ckeditor5-build-classic": "^27.1.0",
     "@ng-bootstrap/ng-bootstrap": "^9.1.0",
     "@nguniversal/express-engine": "^11.2.1",
+    "angular-html-parser": "^1.8.0",
     "bootstrap": "^4.6.0",
     "ckeditor4-angular": "^2.1.0",
     "express": "^4.15.2",

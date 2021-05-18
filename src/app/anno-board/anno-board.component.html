@@ -6,7 +6,7 @@
     <div class="list-box">
       <h5>공고정보 게시판</h5>
       <hr style="width:100%; float: left;">
-      <table class="highlight">
+      <table class="highlight" id="list">
         <thead>
           <tr>
             <th>번호</th>
@@ -14,10 +14,10 @@
             <th>작성일</th>
           </tr>
         </thead>
-        <tbody>
-          <tr *ngFor="let row of anno_list">
+        <tbody *ngFor="let row of anno_list; let i = index">
+          <tr (click)="getContents(row.anno_id, i)">
             <td>{{row.anno_id}}</td>
-            <td>{{row.anno_title}}</td>
+            <td style="text-align: left;">{{row.anno_title}}</td>
             <td>{{row.anno_date}}</td>
           </tr>
         </tbody>
@@ -34,7 +34,7 @@
         <ul class="pagination" style="float: left;">
           <li><a href=""><i class="material-icons">chevron_left</i></a></li>
           <li *ngFor="let searchPage of searchPages"><a href="javascript:void(0);"
-              (click)="setPage(searchPage)">{{searchPage}}</a>
+              (click)="setSearchPage(searchPage)">{{searchPage}}</a>
           </li>
           <li><a href="#!"><i class="material-icons">chevron_right</i></a></li>
         </ul>
